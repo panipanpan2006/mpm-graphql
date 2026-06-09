@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Toko Online GraphQL API
 
 ## Cara Menjalankan
@@ -23,3 +24,7 @@ membebani server secara berlebihan (misalnya produk → kategori → produk lagi
 secara rekursif). Mitigasinya adalah menerapkan query depth limiting menggunakan
 library seperti `strawberry-django` atau middleware custom yang membatasi
 kedalaman query maksimum.
+=======
+# mpm-graphql
+A simple implementation of a GraphQL API for an online store domain using FastAPI and Strawberry (Python). This project was created as an assignment for the Modern Programming Methods course and covers Query and Mutation operations with in-memory data, as well as a comparative analysis of REST and GraphQL architectures.
+>>>>>>> 365bf849e061cfadc2395fcf0f329984c8793b29
