@@ -5,7 +5,6 @@
 ![Python](https://img.shields.io/badge/Python-3.11+-3776AB?style=flat&logo=python&logoColor=white)
 ![FastAPI](https://img.shields.io/badge/FastAPI-0.100+-009688?style=flat&logo=fastapi&logoColor=white)
 ![Strawberry](https://img.shields.io/badge/Strawberry-GraphQL-e8336d?style=flat)
-![License](https://img.shields.io/badge/License-MIT-green?style=flat)
 
 ---
 
@@ -162,21 +161,21 @@ mutation {
 
 ### ✅ Kapan GraphQL Lebih Cocok?
 
-1. **Data yang dibutuhkan antar klien berbeda-beda** — misalnya aplikasi mobile hanya butuh `name` dan `price`, sementara web butuh semua field termasuk kategori. Dengan GraphQL, setiap klien bisa meminta hanya field yang dibutuhkan (*no over-fetching*).
+1. **Data yang dibutuhkan antar klien berbeda-beda** misalnya aplikasi mobile hanya butuh `name` dan `price`, sementara web butuh semua field termasuk kategori. Dengan GraphQL, setiap klien bisa meminta hanya field yang dibutuhkan (*no over-fetching*).
 
-2. **Relasi data yang kompleks** — seperti produk → kategori → supplier. GraphQL memungkinkan pengambilan semua relasi tersebut dalam **satu request** tanpa perlu melakukan beberapa endpoint call seperti di REST.
+2. **Relasi data yang kompleks** seperti produk → kategori → supplier. GraphQL memungkinkan pengambilan semua relasi tersebut dalam **satu request** tanpa perlu melakukan beberapa endpoint call seperti di REST.
 
 ### ✅ Kapan REST Lebih Cocok?
 
-1. **API publik yang sederhana dan mudah didokumentasikan** — endpoint REST seperti `GET /products` lebih intuitif dan familiar bagi banyak developer, sehingga lebih mudah dikonsumsi tanpa perlu memahami skema GraphQL.
+1. **API publik yang sederhana dan mudah didokumentasikan** endpoint REST seperti `GET /products` lebih intuitif dan familiar bagi banyak developer, sehingga lebih mudah dikonsumsi tanpa perlu memahami skema GraphQL.
 
-2. **Operasi berbasis file atau streaming** — seperti upload/download file, REST lebih tepat karena GraphQL tidak dirancang untuk menangani tipe data biner secara efisien.
+2. **Operasi berbasis file atau streaming** seperti upload/download file, REST lebih tepat karena GraphQL tidak dirancang untuk menangani tipe data biner secara efisien.
 
 ### ⚠️ Risiko & Mitigasi GraphQL
 
 | Risiko | Mitigasi |
 |---|---|
-| **N+1 Query Problem & Nested Depth berlebihan** — query yang terlalu dalam secara rekursif dapat membebani server | Terapkan **query depth limiting** menggunakan middleware, batasi kedalaman maksimum query (misalnya max depth = 5) |
+| **N+1 Query Problem & Nested Depth berlebihan** query yang terlalu dalam secara rekursif dapat membebani server | Terapkan **query depth limiting** menggunakan middleware, batasi kedalaman maksimum query (misalnya max depth = 5) |
 
 ---
 
@@ -186,10 +185,10 @@ mutation {
 mpm-graphql/
 ├── env/                  ← virtual environment (tidak di-commit)
 ├── screenshots/          ← folder screenshot playground
-│   ├── screenshot_1_query_list.png
-│   ├── screenshot_2_query_detail.png
-│   ├── screenshot_3_mutation.png
-│   └── screenshot_4_verifikasi.png
+│   ├── mutation.png
+│   ├── query_produk.png
+│   ├── query_satuproduk.png
+│   └── verifikasi_mutation.png
 ├── main.py               ← kode utama GraphQL API
 ├── README.md             ← dokumentasi proyek
 └── .gitignore
@@ -199,7 +198,7 @@ mpm-graphql/
 
 ## 👤 Author
 
-**Ivan Admaja Kuncoro** · Mahasiswa Teknik Informatika  
+**Ivan Admaja Kuncoro** · Mahasiswa Teknik Elektro
 📧 ivankuncoro06@gmail.com · [GitHub](https://github.com/panipanpan2006)
 
 ---
